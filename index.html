@@ -152,6 +152,20 @@
             text-align: center;
         }
 
+        .video-container {
+            width: 100%;
+            max-width: 800px;
+            aspect-ratio: 16 / 9;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .video-container iframe {
+            width: 100%;
+            height: 100%;
+        }
+
         footer {
             background: #000;
             color: #888;
@@ -253,8 +267,8 @@
 
     <section id="video">
         <h2>Video</h2>
-        <div class="content-placeholder">
-            <p>ミュージックビデオやライブ映像をここに配置できます</p>
+        <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/8JmWjWl_EDM?si=Iu2_iHuIAPa2exQ9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
     </section>
 
