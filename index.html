@@ -166,6 +166,35 @@
             height: 100%;
         }
 
+        .discography-content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .album-cover {
+            display: block;
+            width: 320px;
+            height: 320px;
+            transition: transform 0.3s, box-shadow 0.3s;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .album-cover:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 30px rgba(255, 107, 107, 0.3);
+        }
+
+        .album-cover img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
         footer {
             background: #000;
             color: #888;
@@ -229,6 +258,11 @@
             section {
                 padding: 80px 1rem 30px;
             }
+
+            .album-cover {
+                width: 250px;
+                height: 250px;
+            }
         }
 
         @media (max-width: 480px) {
@@ -274,8 +308,10 @@
 
     <section id="discography">
         <h2>Discography</h2>
-        <div class="content-placeholder">
-            <p>アルバムやシングルの情報をここに配置できます</p>
+        <div class="discography-content">
+            <a href="https://big-up.style/QvFrIe6ASY" target="_blank" class="album-cover">
+                <img src="/ok.png" alt="Album Cover">
+            </a>
         </div>
     </section>
 
